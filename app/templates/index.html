@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}IniniWeb{% endblock %}
+
+{% block content %}
+
+<style>
+    .vertical-center {
+        margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+
+<div class="container vertical-center" style="text-align: center;">
+    <h1>Welcome to InfiniWeb</h1>
+    <p>A simple website that grows as you explore...</p>
+    <a href="/{{ word }}" class="btn btn-primary" id="jump-in">Jump to a Random Page</a>
+</div>
+
+{% endblock %}

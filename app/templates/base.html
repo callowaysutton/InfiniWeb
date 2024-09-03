@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+    <!-- Unpoly -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/unpoly.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/unpoly-bootstrap5.min.css') }}">
+    <script src="{{ url_for('static', filename='js/unpoly.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/unpoly-bootstrap5.min.js') }}"></script>
+    <title>
+        {% block title %}InfiniWeb{% endblock %}
+    </title>
+</head>
+<body>
+    {% block content %}{% endblock %}
+
+    <script>
+        up.link.config.followSelectors.push('a[href]')
+    </script>
+</body>
+</html>

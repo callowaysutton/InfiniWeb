@@ -1,0 +1,18 @@
+[project]
+name = "infinipage"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=0.34.0",
+    "diffusers>=0.30.2",
+    "flask-sqlalchemy>=3.1.1",
+    "flask>=3.0.3",
+    "groq>=0.10.0",
+    "gunicorn>=23.0.0",
+    "python-dotenv>=1.0.1",
+    "safetensors>=0.4.4",
+    "torch",
+    "transformers",
+]
